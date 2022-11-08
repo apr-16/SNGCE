@@ -4,6 +4,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.topbar {
+    padding: 10px;
+}
+
 .header {
     min-height: 100vh;
     width: 100%;
@@ -13,46 +17,104 @@
     position: relative;
 }
 
-nav {
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
+.bg-blue {
 
+    background-color: #313192;
 }
 
-nav img {
-    width: 150px;
-}
+.cw {
 
-.nav links {
-    flex: 1;
-    text-align: right;
-}
-
-.nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-
-.nav-links ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 13px;
+
 }
 
-.nav-links ul li::after {
-    content: '';
-    width: 0;
-    height: 2px;
-    background: red;
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+
+.icon-bar {
+    width: 90px;
+    /* Set a specific width */
+    background-color: #555;
+    /* Dark-grey background */
     display: block;
-    margin: auto;
-    transition: 0.5s;
+    /* Make the links appear below each other instead of side-by-side */
+    text-align: center;
+    /* Center-align text */
+    padding: 16px;
+    /* Add some padding */
+    transition: all 0.3s ease;
+    /* Add transition for hover effects */
+    color: white;
+    /* White text color */
+    font-size: 36px;
+    /* Increased font-size */
 }
 
-.nav-links ul li:hover::after {
-    width: 100%;
+.icon-bar :hover {
+    background-color: #000;
+    /* Add a hover color */
+}
+
+.active {
+    background-color: #04AA6D;
+    /* Add an active/current color */
+}
+
+.mytoggler {
+
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    border-color: #000;
+
+}
+
+.mytoggler .mytoggler_icon {
+    color: #000;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+
+/*X-Small devices (portrait phones, less than 576px) 
+/* No media query for `xs` since this is the default in Bootstrap
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+
+    .topbar {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .bg-blue {
+
+
+        background-color: #fff;
+    }
+
+    .cw {
+        color: #000;
+        text-decoration: none;
+    }
 }
