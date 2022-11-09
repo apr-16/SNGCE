@@ -13,6 +13,27 @@
             border-radius: 9px;
             color: rgb(243, 232, 232);
         }
+        input{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 9px;
+            border: none;
+        }
+        .select{
+            margin: 10px;
+            padding: 10px;
+            
+        }
+        label{
+          
+            padding: 10px;
+        }
+        .submit{
+            color: aliceblue;
+            background-color: rgb(223, 87, 9);
+            border-radius: 9px;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -20,9 +41,18 @@
       <div class="form">
         <label for="">Name</label>
         <input type="text"><br>
-        <label for="">password</label>
+        <label for="">Cites</label> 
+        <select name="city" id="">
+            <option value="London">London</option>
+            <option value="">Tokyo</option>
+            <option value="">Paris</option>
+            <option value="">LA</option>
+            <option value="">Newyork</option>
+        </select><br>
+        <label for="">Password</label>
+
         <input type="password"><br>
-        <input type="button" value="submit"><br>
+        <input type="submit" class="submit" value="submit"><br>
       </div>
     </form>
 </body>
